@@ -10,21 +10,20 @@ var connection = mysql.createConnection({
     database: "bamazon_DB"
 });
 
-var table = new tablefy();
-
 connection.connect(function (err) {
     if (err) throw err;
-    viewProducts();
     start();
 });
 
 function viewProducts() {
+    var table = new tablefy();
     connection.query("SELECT * FROM products", (err, res) => {
         table.draw(res);
     });
 };
 
 function start() {
+    viewProducts();
     connection.query("SELECT * FROM products", function (err, results) {
         if (err) throw err;
 
