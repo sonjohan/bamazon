@@ -1,0 +1,251 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\sonjo\bootcamp\code\homeWork\bamazon
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 50
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a url, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 444
+    content: "\e[0m\e[0K"
+  - delay: 61
+    content: "Windows PowerShell\e[0K\e[?25l\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[0K\r\n\e[0K\r\n\e[0K\e[?25h"
+  - delay: 162
+    content: "PS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon>\e[0K\e[51G"
+  - delay: 1215
+    content: "\e[?25l\rPS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon> \e[0;33;93mterminalizer\e[0m record Manager\e[0K\e[?25h"
+  - delay: 534
+    content: "\e[?25l\rPS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon> \e[0;33;93mclear\e[0m\e[0K\e[?25h"
+  - delay: 780
+    content: "\e[?25l\rPS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon> \e[0;33;93mnode\e[0m .\\bamazonManager.js\e[0K\e[?25h"
+  - delay: 745
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 437
+    content: "\e[?25l\e[0;32m?\e[0m\e[0K\r\n\e[0;1mWhat would you like to do?\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> View Products for Sale\e[0m\e[0K\r\n  View Low Inventory\e[0K\r\n  Add to Inventory\e[0K\r\n  Add New Product\e[0K"
+  - delay: 1880
+    content: "\r\e[4A\e[0;1mWhat would you like to do?\e[0m \e[0;36mView Products for Sale\e[0m\e[0K\r\n=================================================================\e[0K\r\n|id|product_name         |department_name|price  |stock_quantity|\e[0K\r\n=================================================================\e[0K\r\n|1 |Nintendo Switch      |Video Games    |249.99 |1             |\e[0K\r\n|2 |Samsung TV           |Electronics    |620.99 |4             |\e[0K\r\n|3 |Asus Laptop          |Electronics    |1199.99|2             |\e[0K\r\n|4 |Scooter              |Vehicles       |699.99 |4             |\e[0K\r\n|5 |The Flash - Tshirt   |Clothes        |29.99  |14            |\e[0K\r\n|6 |Laptop table         |forniture      |59.99  |4             |\e[0K\r\n|7 |HDTV cable           |Electronics    |19.99  |12            |\e[0K\r\n|8 |Wall Mirror          |Forniture      |39.99  |2             |\e[0K\r\n|9 |16GB USB mempry      |Electronics    |19.99  |9             |\e[0K\r\n|10|Mario Kart for Switch|Video Games    |59.99  |5             |\e[0K\r\n=================================================================\e[0K\r\n\e[0;32m?\e[0m\e[0K\r\n\e[0;1mWhat would you like to do?\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> View Products for Sale\e[0m\e[0K\r\n  View Low Inventory\e[0K\r\n  Add to Inventory\e[0K\r\n  Add New Product\e[0K"
+  - delay: 2191
+    content: "\r\e[4A\e[0;1mWhat would you like to do?\e[0m\e[0K\r\n  View Products for Sale\e[0K\r\n\e[0;36m> View Low Inventory\e[0m\e[0K\r\n  Add to Inventory\e[0K\r\n  Add New Product\e[0K"
+  - delay: 1155
+    content: "\r\e[4A\e[0;1mWhat would you like to do?\e[0m \e[0;36mView Low Inventory\e[0m\e[0K\r\n=========================================\e[0K\r\n|id|product_name         |stock_quantity|\e[0K\r\n=========================================\e[0K\r\n|1 |Nintendo Switch      |1             |\e[0K\r\n|2 |Samsung TV           |4             |\e[0K\r\n|3 |Asus Laptop          |2             |\e[0K\r\n|4 |Scooter              |4             |\e[0K\r\n|6 |Laptop table         |4             |\e[0K\r\n|8 |Wall Mirror          |2             |\e[0K\r\n|10|Mario Kart for Switch|5             |\e[0K\r\n=========================================\e[0K\r\n\e[0;32m?\e[0m\e[0K\r\n\e[0;1mWhat would you like to do?\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> View Products for Sale\e[0m\e[0K\r\n  View Low Inventory\e[0K\r\n  Add to Inventory\e[0K\r\n  Add New Product\e[0K"
+  - delay: 2434
+    content: "\r\e[4A\e[0;1mWhat would you like to do?\e[0m\e[0K\r\n  View Products for Sale\e[0K\r\n\e[0;36m> View Low Inventory\e[0m\e[0K\r\n  Add to Inventory\e[0K\r\n  Add New Product\e[0K"
+  - delay: 535
+    content: "\r\e[2A  View Low Inventory\e[0K\r\n\e[0;36m> Add to Inventory\e[0m\e[0K\r\n  Add New Product\e[0K"
+  - delay: 1093
+    content: "\r\e[4A\e[0;1mWhat would you like to do?\e[0m \e[0;36mAdd to Inventory\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mSelect an item\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> Nintendo Switch\e[0m\e[0K\r\n  Samsung TV\e[0K\r\n  Asus Laptop\e[0K\r\n  Scooter\e[0K\r\n  The Flash - Tshirt\e[0K\r\n  Laptop table\e[0K\r\n  HDTV cable\e[0K\r\n(Move up and down to reveal more choices)\e[0K"
+  - delay: 4372
+    content: "\r\e[8A\e[0;32m?\e[0m \e[0;1mSelect an item\e[0m \e[0;36mNintendo Switch\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mHow many items are you adding?\e[0m\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[7A\e[34G\e[?25h"
+  - delay: 2100
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mHow many items are you adding?\e[0m 3\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[7A\e[35G\e[?25h"
+  - delay: 781
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mHow many items are you adding?\e[0m \e[0;36m3\e[0m\e[0K\r\n3\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[5A\e[?25h"
+  - delay: 61
+    content: "\e[?25lAdded to inventory successfully!\e[0K\r\n\e[0;32m?\e[0m\e[0K\r\n\e[0;1mWhat would you like to do?\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> View Products for Sale\e[0m\e[0K\r\n  View Low Inventory\e[0K\r\n  Add to Inventory\e[0K\r\n  Add New Product\e[0K"
+  - delay: 2966
+    content: "\r\e[4A\e[0;1mWhat would you like to do?\e[0m \e[0;36mView Products for Sale\e[0m\e[0K\r\n=================================================================\e[0K\r\n|id|product_name         |department_name|price  |stock_quantity|\e[0K\r\n=================================================================\e[0K\r\n|1 |Nintendo Switch      |Video Games    |249.99 |4             |\e[0K\r\n|2 |Samsung TV           |Electronics    |620.99 |4             |\e[0K\r\n|3 |Asus Laptop          |Electronics    |1199.99|2             |\e[0K\r\n|4 |Scooter              |Vehicles       |699.99 |4             |\e[0K\r\n|5 |The Flash - Tshirt   |Clothes        |29.99  |14            |\e[0K\r\n|6 |Laptop table         |forniture      |59.99  |4             |\e[0K\r\n|7 |HDTV cable           |Electronics    |19.99  |12            |\e[0K\r\n|8 |Wall Mirror          |Forniture      |39.99  |2             |\e[0K\r\n|9 |16GB USB mempry      |Electronics    |19.99  |9             |\e[0K\r\n|10|Mario Kart for Switch|Video Games    |59.99  |5             |\e[0K\r\n=================================================================\e[0K\r\n\e[0;32m?\e[0m\e[0K\r\n\e[0;1mWhat would you like to do?\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> View Products for Sale\e[0m\e[0K\r\n  View Low Inventory\e[0K\r\n  Add to Inventory\e[0K\r\n  Add New Product\e[0K"
+  - delay: 2439
+    content: "\r\e[4A\e[0;1mWhat would you like to do?\e[0m\e[0K\r\n  View Products for Sale\e[0K\r\n\e[0;36m> View Low Inventory\e[0m\e[0K\r\n  Add to Inventory\e[0K\r\n  Add New Product\e[0K"
+  - delay: 376
+    content: "\r\e[2A  View Low Inventory\e[0K\r\n\e[0;36m> Add to Inventory\e[0m\e[0K\r\n  Add New Product\e[0K"
+  - delay: 403
+    content: "\r\e[1A  Add to Inventory\e[0K\r\n\e[0;36m> Add New Product\e[0m\e[0K"
+  - delay: 2025
+    content: "\r\e[4A\e[0;1mWhat would you like to do?\e[0m \e[0;36mAdd New Product\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mProduct name\e[0m\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[16G\e[?25h"
+  - delay: 1444
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mProduct name\e[0m I\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[17G\e[?25h"
+  - delay: 315
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mProduct name\e[0m Ip\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[18G\e[?25h"
+  - delay: 211
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mProduct name\e[0m Iph\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[19G\e[?25h"
+  - delay: 101
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mProduct name\e[0m Ipho\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[20G\e[?25h"
+  - delay: 218
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mProduct name\e[0m Iphon\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[21G\e[?25h"
+  - delay: 95
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mProduct name\e[0m Iphone\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[22G\e[?25h"
+  - delay: 1343
+    content: "\e[?25l\r\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[22G\e[?25h"
+  - delay: 27
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mProduct name\e[0m Iphone\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[23G\e[?25h"
+  - delay: 475
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mProduct name\e[0m Iphone X\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[24G\e[?25h"
+  - delay: 1464
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mProduct name\e[0m \e[0;36mIphone X\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[19G\e[?25h"
+  - delay: 2254
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m E\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[20G\e[?25h"
+  - delay: 277
+    content: "\e[?25l\r\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[20G\e[?25h"
+  - delay: 36
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m El\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[21G\e[?25h"
+  - delay: 150
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m Ele\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[22G\e[?25h"
+  - delay: 845
+    content: "\e[?25l\r\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[22G\e[?25h"
+  - delay: 27
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m Elec\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[23G\e[?25h"
+  - delay: 250
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m Elect\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[24G\e[?25h"
+  - delay: 253
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m Electr\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[25G\e[?25h"
+  - delay: 194
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m Electro\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[26G\e[?25h"
+  - delay: 340
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m Electron\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[27G\e[?25h"
+  - delay: 120
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m Electroni\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[28G\e[?25h"
+  - delay: 257
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m Electronic\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[29G\e[?25h"
+  - delay: 247
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m Electronics\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[30G\e[?25h"
+  - delay: 1125
+    content: "\e[?25l\r\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[30G\e[?25h"
+  - delay: 25
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mDepartment name\e[0m \e[0;36mElectronics\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mPrice\e[0m\e[0K\r\n\e[0K\r\e[1A\e[9G\e[?25h"
+  - delay: 2814
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mPrice\e[0m 6\e[0K\r\n\e[0K\r\e[1A\e[10G\e[?25h"
+  - delay: 220
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mPrice\e[0m 69\e[0K\r\n\e[0K\r\e[1A\e[11G\e[?25h"
+  - delay: 284
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mPrice\e[0m 699\e[0K\r\n\e[0K\r\e[1A\e[12G\e[?25h"
+  - delay: 344
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mPrice\e[0m 699.\e[0K\r\n\e[0K\r\e[1A\e[13G\e[?25h"
+  - delay: 248
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mPrice\e[0m 699.9\e[0K\r\n\e[0K\r\e[1A\e[14G\e[?25h"
+  - delay: 188
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mPrice\e[0m 699.99\e[0K\r\n\e[0K\r\e[1A\e[15G\e[?25h"
+  - delay: 688
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mPrice\e[0m \e[0;36m699.99\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mQuantity\e[0m\e[0K\e[12G\e[?25h"
+  - delay: 2248
+    content: "\e[?25l\r\e[0K\e[12G\e[?25h"
+  - delay: 37
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mQuantity\e[0m 1\e[0K\e[?25h"
+  - delay: 55
+    content: "0\e[0K"
+  - delay: 717
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mQuantity\e[0m \e[0;36m10\e[0m\e[0K\r\n\e[0K\e[?25h"
+  - delay: 38
+    content: "\e[?25lNew product added to inventory successfully!\e[0K\r\n\e[0;32m?\e[0m\e[0K\r\n\e[0;1mWhat would you like to do?\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> View Products for Sale\e[0m\e[0K\r\n  View Low Inventory\e[0K\r\n  Add to Inventory\e[0K\r\n  Add New Product\e[0K"
+  - delay: 2377
+    content: "\r\e[5A\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K"
+  - delay: 28
+    content: "\r\e[5A\e[0;32m?\e[0m\e[0K\r\n\e[0;1mWhat would you like to do?\e[0m \e[0;36mView Products for Sale\e[0m\e[0K\r\n=================================================================\e[0K\r\n|id|product_name         |department_name|price  |stock_quantity|\e[0K\r\n=================================================================\e[0K\r\n|1 |Nintendo Switch      |Video Games    |249.99 |4             |\e[0K\r\n|2 |Samsung TV           |Electronics    |620.99 |4             |\e[0K\r\n|3 |Asus Laptop          |Electronics    |1199.99|2             |\e[0K\r\n|4 |Scooter              |Vehicles       |699.99 |4             |\e[0K\r\n|5 |The Flash - Tshirt   |Clothes        |29.99  |14            |\e[0K\r\n|6 |Laptop table         |forniture      |59.99  |4             |\e[0K\r\n|7 |HDTV cable           |Electronics    |19.99  |12            |\e[0K\r\n|8 |Wall Mirror          |Forniture      |39.99  |2             |\e[0K\r\n|9 |16GB USB mempry      |Electronics    |19.99  |9             |\e[0K\r\n|10|Mario Kart for Switch|Video Games    |59.99  |5             |\e[0K\r\n|11|Iphone X             |Electronics    |699    |10            |\e[0K\r\n=================================================================\e[0K\r\n\e[0;32m?\e[0m\e[0K\r\n\e[0;1mWhat would you like to do?\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> View Products for Sale\e[0m\e[0K\r\n  View Low Inventory\e[0K\r\n  Add to Inventory\e[0K\r\n  Add New Product\e[0K"
+  - delay: 3439
+    content: "\r\n\e[0K"
+  - delay: 24
+    content: "PS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon>\e[0K"
+  - delay: 1415
+    content: " \e[0;33;93me\e[0m\e[0K"
+  - delay: 372
+    content: "\e[0;33;93mx\e[0m\e[0K"
+  - delay: 186
+    content: "\e[0;33;93mi\e[0m\e[0K"
+  - delay: 190
+    content: "\rPS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon> \e[0;32;92mexit\e[0m\e[0K"
+  - delay: 187
+    content: "\r\n\e[0K"
