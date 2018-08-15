@@ -1,0 +1,181 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\sonjo\bootcamp\code\homeWork\bamazon
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 50
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a url, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 666
+    content: "\e[0m\e[0K"
+  - delay: 306
+    content: "Windows PowerShell\e[0K\e[?25l\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[0K\r\n\e[0K\r\n\e[0K\e[?25h"
+  - delay: 1348
+    content: "PS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon>\e[0K\e[51G"
+  - delay: 593
+    content: "\e[?25l\rPS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon> \e[0;33;93mterminalizer\e[0m record customer\e[0K\e[?25h"
+  - delay: 436
+    content: "\e[?25l\rPS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon> \e[0;33;93mclear\e[0m\e[0K\e[?25h"
+  - delay: 347
+    content: "\e[?25l\rPS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon> \e[0;33;93mnode\e[0m .\\bamazonCustomer.js\e[0K\e[?25h"
+  - delay: 1124
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 438
+    content: "=================================================================\e[0K\e[?25l\r\n|id|product_name         |department_name|price  |stock_quantity|\e[0K\r\n=================================================================\e[0K\r\n|1 |Nintendo Switch      |Video Games    |249.99 |1             |\e[0K\r\n|2 |Samsung TV           |Electronics    |620.99 |4             |\e[0K\r\n|3 |Asus Laptop          |Electronics    |1199.99|2             |\e[0K\r\n|4 |Scooter              |Vehicles       |699.99 |4             |\e[0K\r\n|5 |The Flash - Tshirt   |Clothes        |29.99  |17            |\e[0K\r\n|6 |Laptop table         |forniture      |59.99  |4             |\e[0K\r\n|7 |HDTV cable           |Electronics    |19.99  |16            |\e[0K\r\n|8 |Wall Mirror          |Forniture      |39.99  |2             |\e[0K\r\n|9 |16GB USB mempry      |Electronics    |19.99  |9             |\e[0K\r\n|10|Mario Kart for Switch|Video Games    |59.99  |5             |\e[0K\r\n=================================================================\e[0K\r\n\e[0K\e[?25h"
+  - delay: 26
+    content: "\e[0;32m?\e[0m \e[0;1mEnter the ID of the product\e[0m\e[0K\e[31G"
+  - delay: 3883
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the ID of the product\e[0m 5\e[0K\e[?25h"
+  - delay: 1775
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the ID of the product\e[0m \e[0;36m5\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mHow many items?\e[0m\e[0K\e[19G\e[?25h"
+  - delay: 1063
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mHow many items?\e[0m 3\e[0K\e[?25h"
+  - delay: 528
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mHow many items?\e[0m \e[0;36m3\e[0m\e[0K\r\n\e[0K\e[?25h"
+  - delay: 37
+    content: "Order placed successfully!\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 1002
+    content: "=================================================================\e[0K\e[?25l\r\n|id|product_name         |department_name|price  |stock_quantity|\e[0K\r\n=================================================================\e[0K\r\n|1 |Nintendo Switch      |Video Games    |249.99 |1             |\e[0K\r\n|2 |Samsung TV           |Electronics    |620.99 |4             |\e[0K\r\n|3 |Asus Laptop          |Electronics    |1199.99|2             |\e[0K\r\n|4 |Scooter              |Vehicles       |699.99 |4             |\e[0K\r\n|5 |The Flash - Tshirt   |Clothes        |29.99  |14            |\e[0K\r\n|6 |Laptop table         |forniture      |59.99  |4             |\e[0K\r\n|7 |HDTV cable           |Electronics    |19.99  |16            |\e[0K\r\n|8 |Wall Mirror          |Forniture      |39.99  |2             |\e[0K\r\n|9 |16GB USB mempry      |Electronics    |19.99  |9             |\e[0K\r\n|10|Mario Kart for Switch|Video Games    |59.99  |5             |\e[0K\r\n=================================================================\e[0K\r\n\e[0;32m?\e[0m \e[0;1mEnter the ID of the product\e[0m\e[0K\e[31G\e[?25h"
+  - delay: 4313
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the ID of the product\e[0m 7\e[0K\e[?25h"
+  - delay: 803
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the ID of the product\e[0m \e[0;36m7\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mHow many items?\e[0m\e[0K\e[19G\e[?25h"
+  - delay: 2478
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mHow many items?\e[0m 4\e[0K\e[?25h"
+  - delay: 343
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mHow many items?\e[0m \e[0;36m4\e[0m\e[0K\r\nOrder placed successfully!\e[0K\r\n\e[0K\e[?25h"
+  - delay: 997
+    content: "=================================================================\e[0K\e[?25l\r\n|id|product_name         |department_name|price  |stock_quantity|\e[0K\r\n=================================================================\e[0K\r\n|1 |Nintendo Switch      |Video Games    |249.99 |1             |\e[0K\r\n|2 |Samsung TV           |Electronics    |620.99 |4             |\e[0K\r\n|3 |Asus Laptop          |Electronics    |1199.99|2             |\e[0K\r\n|4 |Scooter              |Vehicles       |699.99 |4             |\e[0K\r\n|5 |The Flash - Tshirt   |Clothes        |29.99  |14            |\e[0K\r\n|6 |Laptop table         |forniture      |59.99  |4             |\e[0K\r\n|7 |HDTV cable           |Electronics    |19.99  |12            |\e[0K\r\n|8 |Wall Mirror          |Forniture      |39.99  |2             |\e[0K\r\n|9 |16GB USB mempry      |Electronics    |19.99  |9             |\e[0K\r\n|10|Mario Kart for Switch|Video Games    |59.99  |5             |\e[0K\r\n=================================================================\e[0K\r\n\e[0K\e[?25h"
+  - delay: 32
+    content: "\e[0;32m?\e[0m \e[0;1mEnter the ID of the product\e[0m\e[0K\e[31G"
+  - delay: 1469
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the ID of the product\e[0m 1\e[0K\e[?25h"
+  - delay: 755
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the ID of the product\e[0m \e[0;36m1\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mHow many items?\e[0m\e[0K\e[19G\e[?25h"
+  - delay: 2496
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mHow many items?\e[0m 4\e[0K\e[?25h"
+  - delay: 806
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mHow many items?\e[0m \e[0;36m4\e[0m\e[0K\r\nInsufficient quantity!\e[0K\r\n\e[0K\e[?25h"
+  - delay: 1002
+    content: "=================================================================\e[0K\e[?25l\r\n|id|product_name         |department_name|price  |stock_quantity|\e[0K\r\n=================================================================\e[0K\r\n|1 |Nintendo Switch      |Video Games    |249.99 |1             |\e[0K\r\n|2 |Samsung TV           |Electronics    |620.99 |4             |\e[0K\r\n|3 |Asus Laptop          |Electronics    |1199.99|2             |\e[0K\r\n|4 |Scooter              |Vehicles       |699.99 |4             |\e[0K\r\n|5 |The Flash - Tshirt   |Clothes        |29.99  |14            |\e[0K\r\n|6 |Laptop table         |forniture      |59.99  |4             |\e[0K\r\n|7 |HDTV cable           |Electronics    |19.99  |12            |\e[0K\r\n|8 |Wall Mirror          |Forniture      |39.99  |2             |\e[0K\r\n|9 |16GB USB mempry      |Electronics    |19.99  |9             |\e[0K\r\n|10|Mario Kart for Switch|Video Games    |59.99  |5             |\e[0K\r\n=================================================================\e[0K\r\n\e[0K\e[?25h"
+  - delay: 34
+    content: "\e[0;32m?\e[0m \e[0;1mEnter the ID of the product\e[0m\e[0K\e[31G"
+  - delay: 3872
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 60
+    content: "PS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon>\e[0K\e[51G"
+  - delay: 1190
+    content: "\e[?25l\rPS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon> \e[0;33;93me\e[0m\e[0K\e[?25h"
+  - delay: 351
+    content: "\e[0;33;93mx\e[0m\e[0K"
+  - delay: 241
+    content: "\e[0;33;93mi\e[0m\e[0K"
+  - delay: 288
+    content: "\e[?25l\rPS C:\\Users\\sonjo\\bootcamp\\code\\homeWork\\bamazon> \e[0;32;92mexit\e[0m\e[0K\e[?25h"
+  - delay: 496
+    content: "\e[?25l\r\n\e[0K\e[?25h"
